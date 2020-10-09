@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+<header>
+
+<nav>
+<a href="index.html">Home</a>
+</nav>
+<h1> Заповніть форму </h1>
+</header>
+<main>
+    <form action="https://formspree.io/f/xaylqver" method="post">
+<p>
+<label>
+Що ви оберете?
+<select id="groups" name="groups">
+    <option selected></option>
+    <option>IPhone 11 Pro</option>
+    <option>Samsung A20</option>
+  </optgroup>
+</select>
+</label>
+</p>
+<label>
+Чому саме цей девайс?
+<textarea cols="30" rows="10"></textarea>
+ </label>
+ <p>
+
+</p>
+<p>
+<label for="myFruit">Чи замовили б ви телефон через наш сервіс?(With fallback)</label>
+<input type="text" id="myFruit" name="fruit" list="fruitList">
+    
+<datalist id="fruitList">
+  <label for="suggestion">or pick a fruit</label>
+  <select id="suggestion" name="altFruit">
+    <option>No</option>
+    <option>Yes</option>
+  </select>
+</datalist>
+</p>
+
+ <p>В якій валюті ви будете купляти телефон?</p>
+                <label>
+                    <input type="radio" name="currency" value="euro">€
+                 </label>
+                 <label>
+                    <input type="radio" name="currency" value="dollars">$
+                 </label>
+                  <label>
+                    <input type="radio" name="currency" value="uan">₴
+                 </label>
+<p>
+                 <label>
+                    Phone number:
+                    <input type="text" placeholder="Phone" name="phone" required>
+                 </label>
+</p>
+<p>
+                 <label>
+                    e-mail:
+                    <input type="email" placeholder="Email" name="email" required>
+                </label>
+</p>
+<p><input type="submit"></p>
+       </form>
+
+
+
+
+</main>
+</body>
+</html>
